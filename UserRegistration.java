@@ -55,5 +55,18 @@ public class UserRegistration {
 
         }
     }
+
+    public static void validPassword() {
+        System.out.println("Enter the password");
+        Scanner scanner = new Scanner(System.in);
+        String password = scanner.next();
+        String pw =  "[\\w([A-Z]{1,0})]{8,}";
+        if (pw.matches(password)) {
+            System.out.println("Valid password");
+        } else {
+            System.out.println("Invalid password");
+
+        }
+    }
 }
 
