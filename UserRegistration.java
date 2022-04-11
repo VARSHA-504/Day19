@@ -29,5 +29,18 @@ public class UserRegistration {
 
         }
     }
+
+    public static void validEmailId() {
+        System.out.println("Enter the email ID");
+        Scanner scanner = new Scanner(System.in);
+        String emailId = scanner.next();
+        String id = "^[\\w]+(?:\\.[\\w]+)*@[\\w]+(?:\\.[\\w]+)*$";
+        if (id.matches(emailId)) {
+            System.out.println("Valid email Id");
+        } else {
+            System.out.println("Invalid email Id");
+
+        }
+    }
 }
 
