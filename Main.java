@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Enter 1 : to validate First Name ");
         System.out.println("Enter 2 : To validate Last Name ");
         System.out.println("Enter 3 : To validate E-mail ");
+        System.out.println("Enter 4 : To validate Phone Number ");
         Scanner scanner = new Scanner(System.in);
         switch (scanner.nextInt()) {
             case 1:
@@ -17,6 +18,8 @@ public class Main {
                 UserRegistration.validLastName();
             case 3:
                 UserRegistration.validEmailId();
+            case 4:
+                UserRegistration.validPhoneNumber();
                 break;
             }
         }

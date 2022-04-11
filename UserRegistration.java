@@ -42,5 +42,18 @@ public class UserRegistration {
 
         }
     }
+
+    public static void validPhoneNumber() {
+        System.out.println("Enter the phone number");
+        Scanner scanner = new Scanner(System.in);
+        String phoneNumber = scanner.next();
+        String number = "^91[ ][\\d]{10}$";
+        if (number.matches(phoneNumber)) {
+            System.out.println("Valid phone number");
+        } else {
+            System.out.println("Invalid phone number");
+
+        }
+    }
 }
 
